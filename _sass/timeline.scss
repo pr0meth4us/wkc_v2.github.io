@@ -1,0 +1,52 @@
+.milestones{
+  padding-top: 50px;
+  padding-bottom: 0;
+  text-align: center;
+  color: $brand-color-2;
+  height: 5px;
+}
+.timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: $brand-color-2;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: 20px;
+
+    .timeline-date {
+      font-weight: bold;
+    }
+
+    .timeline-text {
+      font-size: 14px;
+    }
+
+    &:not(:first-child) {
+      margin-left: 50px;
+    }
+
+    &:after {
+      content: '';
+      background: $brand-color-2;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid $brand-color-2;
+      position: absolute;
+      left: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

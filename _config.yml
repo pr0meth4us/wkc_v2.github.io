@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Fur
+title: WKC
 url: "http://turquoise-rook.cloudvent.net/"
 baseurl:
 google_analytics_key:
@@ -11,14 +11,14 @@ snipcart_currency: "usd"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Fur t-shirt store
+description: Your family eye care expert since 1998.
 author:
-  name: fur
-  email: fur@example.com
+  name: WKC
+  email: wkcoptical1998@gmail.com
   twitter: fur # twitter username without the @ symbol
-  phone: "+1 23456789"
+  phone: "+8559533990"
 social:
-  name: Fur Template
+  name: WKC
   links:
     - https://github.com/CloudCannon/fur-jekyll-template
 
@@ -27,7 +27,7 @@ social:
 timezone: Etc/UTC
 
 collections:
-  staff_members:
+  branches:
     output: false
   products:
     output: true

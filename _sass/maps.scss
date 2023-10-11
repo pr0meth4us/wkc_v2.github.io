@@ -1,0 +1,33 @@
+.maps {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  .map-container {
+    width: calc(50% - 10px);
+
+    .map {
+      height: 100%;
+
+      #map-canvas-left {
+        margin-right: 100px;
+      }
+
+      #map-canvas-right {
+        margin-left: 100px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: $brand-color-2;
+    }
+  }
+}

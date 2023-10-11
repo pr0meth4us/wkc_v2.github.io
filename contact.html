@@ -11,11 +11,10 @@ map:
 ---
 
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form" onsubmit="sendEmail(); reset(); return false;">
 		<h3>Send us a message</h3>
 		<label for="name">Full Name</label>
 		<input type="text" name="name" id="name" placeholder="Enter your name..." autofocus>
-
 		<label for="email">Email Address</label>
 		<input type="email" name="email" id="email" placeholder="Enter your email..." required inputmode="email">
 
@@ -27,35 +26,44 @@ map:
 		<input type="submit" value="Send Message">
 	</form>
 
-	<div class="contact-details">
-		<div class="map" id="map"></div>
 </div>
 
-<script type="text/javascript">
-	window.mapData = {{ page.map | jsonify }};
-
-	function initMap() {
-		var myOptions = {
-			scrollwheel: false,
-			draggable: false,
-			panControl: false,
-			disableDefaultUI: true,
-			styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}],
-			zoom: window.mapData.zoom,
-			maxZoom: window.mapData.zoom,
-			minZoom: window.mapData.zoom,
-			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		map = new google.maps.Map(document.getElementById("map"), myOptions);
-		marker = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
-		});
-
-		google.maps.event.addDomListener(window, "resize", function () {
-			map.setCenter(myOptions.center);
-		});
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+	function sendEmail(){
+		Email.send({
+			Host : "smtp.elasticemail.com",
+			Username : "phearaniron.soeung@gmail.com",
+			Password : "C6BFB67D90D49343D1E55B587E7485483E69",
+			To : 'phearaniron.soeung@gmail.com',
+			From : 'phearaniron.soeung@gmail.com',
+			Subject : "New Contact from WKC OPTICAL",
+			Body : "Name:" + document.getElementById("name").value + "<br>" +
+					"Email:" + document.getElementById("email").value + "<br>" +
+					"Message:" + document.getElementById("message").value}).then(
+				message => alert("Message sent successfully. We will contact you soon.")
+		);
 	}
+
 </script>
+
+<div class="maps">
+
+	<div class="map-container">
+		<div class="map" id="map-canvas-left">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.964971965852!2d104.92830527504606!3d11.554368844363022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109512a2b4780cf%3A0x10c0afc74c7b9a00!2sWKC%20optical%20-%20BKK!5e0!3m2!1sen!2skh!4v1696329966047!5m2!1sen!2skh" width="400" height="300" style="border:0;"></iframe>
+		</div>
+		<h4>WKC optical - BKK</h4>
+	</div>
+
+	<div class="map-container">
+		<div class="map" id="map-canvas-right">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.823111272276!2d104.91286677504608!3d11.56453524416281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951ec4b657f0b%3A0xd8fbf04b51630fb6!2sWKC%20optical%20-%20Orrusey!5e0!3m2!1sen!2skh!4v1696330006848!5m2!1sen!2skh" width="400" height="300" style="border:0;"></iframe>
+		</div>
+		<h4>WKC optical - Orrusey</div>
+	</div>
+
+</div>
+
+
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
