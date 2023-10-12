@@ -14,17 +14,6 @@ degree:
   - 270
 
 styles:
-
-  - name: 
-    color: 
-    image: /images/products/Wayfarer_Classic/ceo.jpg
-
-  - name: 
-    color: 
-    image: /images/products/Wayfarer_Classic/ceo.jpg
-
-  - name: 
-    color: 
-    image: /images/products/Wayfarer_Classic/ceo.jpg
+  - image: /images/products/Wayfarer_Classic/ceo.jpg
 
 ---
