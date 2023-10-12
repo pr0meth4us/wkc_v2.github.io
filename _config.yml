@@ -2,8 +2,6 @@
 # Site
 
 title: WKC
-url: "{{ site.baseurl }}/about/"
-baseurl: "{{ site.baseurl }}/about/"
 google_analytics_key:
 google_maps_javascript_api_key:
 snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5ODg1ODkw"
