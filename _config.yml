@@ -3,7 +3,7 @@
 
 title: WKC
 url: "http://turquoise-rook.cloudvent.net/"
-baseurl:
+baseurl: "/about/"
 google_analytics_key:
 google_maps_javascript_api_key:
 snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5ODg1ODkw"
@@ -20,7 +20,7 @@ author:
 social:
   name: WKC
   links:
-    - https://github.com/CloudCannon/fur-jekyll-template
+    - https://github.com/pr0meth4us/
 
 # -----
 # Build

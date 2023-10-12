@@ -30,7 +30,7 @@ collections_config:
     icon: account_circle
     schemas:
       default:
-        path: schemas/staff_members.md
+        path: schemas/branches.md
   products:
     _enabled_editors:
       - data
