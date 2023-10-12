@@ -2,28 +2,24 @@
 # Site
 
 title: WKC
-url: "http://turquoise-rook.cloudvent.net/"
-baseurl: "/about/"
+url: "{{ site.baseurl }}/about/"
+baseurl: "{{ site.baseurl }}/about/"
 google_analytics_key:
 google_maps_javascript_api_key:
 snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5ODg1ODkw"
 snipcart_currency: "usd"
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Your family eye care expert since 1998.
 author:
   name: WKC
   email: wkcoptical1998@gmail.com
-  twitter: fur # twitter username without the @ symbol
   phone: "+8559533990"
 social:
   name: WKC
   links:
     - https://github.com/pr0meth4us/
 
-# -----
-# Build
 timezone: Etc/UTC
 
 collections:
@@ -67,13 +63,6 @@ exclude:
   - LICENCE
 
 social_icons:
-  - Email
-  - Facebook
-  - Google Plus
   - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
+  - Facebook
+  - TikTok
