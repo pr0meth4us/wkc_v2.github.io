@@ -1,9 +1,9 @@
 - name: Our Story
-  link: /about/
+  link: /
   new_window: false
   highlight: false
 - name: Products
-  link: /
+  link: /product/
   new_window: false
   highlight: false
 - name: Contact
