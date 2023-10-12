@@ -11,5 +11,5 @@ form.addEventListener('submit', (e) => {
   let api = new XMLHttpRequest();
   api.open('GET', url, true);
   api.send();
-  console.log("wtv");
+  alert("Message sent successfully. We will contact you soon.");
 });
