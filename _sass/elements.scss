@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
+@import url("https://fonts.googleapis.com/css2?family=Arvo");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
+
 html, body {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	font-family: "Lora",serif, "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+	font-family: "Arvo", "Lora",serif, "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -39,7 +42,9 @@ h2 {
 }
 
 h3 {
-	font-size: 2rem;
+	font-family: "Arvo", serif;
+	//font-weight: 700;
+	font-size: 4rem;
 	margin: 20px 0 10px 0;
 }
 
@@ -53,7 +58,7 @@ h4 {
 
 p, address, label, ul {
 	font-size: 1.2rem;
-	color: #666;
+	color: #1f1f1f;
 	margin-bottom: 20px;
 	line-height: 1.4em;
 }

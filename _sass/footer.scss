@@ -15,6 +15,20 @@ footer {
 		font-size: 1.4rem;
 		margin: 30px 0;
 	}
+	.company-name{
+		@media #{$iphone} {
+			display: none;
+			visibility: hidden;
+			
+		}
+	}
+	.about{
+		@media #{$iphone} {
+			display: none;
+			visibility: hidden;
+
+		}
+	}
 
 	.footer-columns {
 		@media #{$mid-point} {
