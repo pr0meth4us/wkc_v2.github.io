@@ -1,8 +1,3 @@
-_select_data:
-  garment_types:
-    - hat
-    - top
-
 _inputs:
   map:
     comment: "Update the map location and display settings."
@@ -35,7 +30,6 @@ collections_config:
     _enabled_editors:
       - data
     output: true
-    icon: shopping_cart
     schemas:
       default:
         path: schemas/products.md
