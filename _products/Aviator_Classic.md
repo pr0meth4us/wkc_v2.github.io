@@ -1,13 +1,9 @@
 ---
 _schema: default
 name: Sample1
-garment_type: glasses
+description_markdown: >-
+  Go back in time with these classic Clubmaster sunglasses. The iconic brow line and diamond shaped lenses on these frames scream retro cool. Offered in a variety of custom colors. Stylish and durable.
 price: '79.99'
 sku: sample1
-sizes:
-  - XL
-styles:
-  - name: Rose Gold
-    color: '#b76e79'
-    image: /images/products/Wayfarer_Classic/ceo.jpg
+image: /images/products/Wayfarer_Classic/ceo.jpg
 ---
