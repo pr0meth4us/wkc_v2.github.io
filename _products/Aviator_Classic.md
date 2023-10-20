@@ -3,7 +3,7 @@ _schema: default
 name: Sample1
 garment_type: glasses
 price: '79.99'
-sku: aviator-classic
+sku: sample1
 sizes:
   - XL
 styles:
