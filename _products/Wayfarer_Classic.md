@@ -1,19 +1,9 @@
 ---
-name: Wayfarer Classic
+name: Cat Eye Retro
 description_markdown: >-
-  Feel the wind on your face with these classic Wayfarer sunglasses. The iconic shape and style stand the test of time. Offered in a variety of lens colors to match your mood. Durable and lightweight frames. Stylish UV protection for your eyes.
+  Me-ow! Make a bold statement with these cat eye sunglasses. Channel your inner Hollywood starlet with the iconic pointed winged shape. Offered in funky colors and patterns. Mirrored lenses. Show off your wild side.
 
-garment_type: glasses
-price: '99.99'
-sku: wayfarer-classic
-stock: 20
-
-degree:
-  - 90
-  - 190
-  - 270
-
-styles:
-  - image: /images/products/Wayfarer_Classic/ceo.jpg
-
+price: '69.99'
+sku: cat-eye-retro
+image: /images/products/Cat_Eye_Retro/ceo.jpg
 ---

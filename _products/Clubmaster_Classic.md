@@ -1,25 +1,9 @@
 ---
-name: Clubmaster Classic
+name: Cat Eye Retro
 description_markdown: >-
-  Go back in time with these classic Clubmaster sunglasses. The iconic brow line and diamond shaped lenses on these frames scream retro cool. Offered in a variety of custom colors. Stylish and durable.
+  Me-ow! Make a bold statement with these cat eye sunglasses. Channel your inner Hollywood starlet with the iconic pointed winged shape. Offered in funky colors and patterns. Mirrored lenses. Show off your wild side.
 
-garment_type: glasses
-price: '99.99'
-sku: clubmaster-classic
-stock: 20
-degree:
-  - 45
-  - 135
-  - 225
-
-styles:
-
-  - name: Black
-    color: '#000000'
-    image: /images/products/Wayfarer_Classic/ceo.jpg
-
-  - name: Tortoise
-    color: '#7d655c'
-    image: /images/products/Wayfarer_Classic/ceo.jpg
-
+price: '69.99'
+sku: cat-eye-retro
+image: /images/products/Clubmaster_Classic/reachny.jpg
 ---
