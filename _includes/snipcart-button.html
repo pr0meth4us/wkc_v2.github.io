@@ -1,9 +1,0 @@
-<button class="snipcart-add-item"
-	data-item-name="{{ include.product.name }}"
-	data-item-id="{{ include.product.sku }}"
-	data-item-image="{{ include.product.styles.first.image }}"
-	data-item-description="{{ include.product.description }}"
-	data-item-custom1-options="{{ include.product.sizes | join: '|' }}"
-	data-item-url="{{ include.product.url }}"
-	{% if include.text %}{{ include.text }}{% else %}Add to cart{% endif %}
-</button>
